@@ -7,6 +7,7 @@ import Carousel from "./components/Carousel";
 import ButtonStart from "./components/ButtonStart";
 import Quote from "./components/Quote";
 import BoxEvent from "./components/BoxEvent";
+import CountingDays from "./components/CountingDays";
 
 export default function Home() {
   const [isOverlayVisible, setOverlayVisible] = useState(true);
@@ -26,10 +27,10 @@ export default function Home() {
   };
 
   return (
-    <main className="pt-4 flex flex-col">
+    <main className="py-4 flex flex-col">
       {isOverlayVisible && (
         <div
-          className="fixed h-full inset-0 z-50 flex items-center justify-center bg-white"
+          className="fixed h-screen inset-0 z-50 flex items-center justify-center bg-white"
           onClick={handleOverlayClick}
         >
           <ButtonStart />
@@ -40,9 +41,10 @@ export default function Home() {
       </div>
       <Quote/>
       <BoxEvent/>
-      <h2 className="font-semibold text-black mt-8 text-2xl text-center">
-        Our Moment
-      </h2>
+      <div className="px-4 my-8 mb-12">
+        <CountingDays/>
+      </div>
+      
       <Carousel />
     </main>
   );

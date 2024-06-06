@@ -3,8 +3,8 @@
 
 import React from 'react'
 import styled from "styled-components";
+
 const Background = styled.div`
-  
   overflow-x: hidden;
   height: 220px;
   background-repeat: no-repeat;
