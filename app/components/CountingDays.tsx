@@ -7,14 +7,13 @@ import styled from "styled-components";
 const Background = styled.div`
   overflow-x: hidden;
   background-color: black;
-  height: 200px;
   background-repeat: no-repeat;
   background-position: center calc(100% - 0px);
   background-size: 120%;
-  background-height: 100%;
+  position: relative;
   background-image: url("/assets/images/tekstur2.png");
   background-opacity: 5%;
-  position: relative;
+  min-height: 180px;
 `;
 
 // Define the type for timeLeft
