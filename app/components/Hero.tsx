@@ -11,7 +11,7 @@ const Background = styled.div`
   background-position: center calc(100% - 0px);
   background-size: 110%;
   background-height:100%;
-  background-image: url("/assets/images/hero10.jpg");
+  background-image: url("/assets/images/hero12.jpg");
   background-opacity: 20%;
   position: relative;
 
