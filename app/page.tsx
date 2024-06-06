@@ -29,7 +29,7 @@ export default function Home() {
     <main className="pt-4 flex flex-col">
       {isOverlayVisible && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-white"
+          className="fixed h-full inset-0 z-50 flex items-center justify-center bg-white"
           onClick={handleOverlayClick}
         >
           <ButtonStart />
