@@ -9,7 +9,7 @@ const Background = styled.div`
   background-color: black;
   background-repeat: no-repeat;
   background-position: center calc(100% - 0px);
-  background-size: 120%;
+  background-size: cover;
   position: relative;
   background-image: url("/assets/images/tekstur2.png");
   background-opacity: 5%;

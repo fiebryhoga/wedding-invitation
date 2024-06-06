@@ -16,7 +16,7 @@ const Cover = styled.div`
   background-color: black;
   background-repeat: no-repeat;
   background-position: center calc(100% - 0px);
-  background-size: 136%;
+  background-size: cover;
   position: fixed;
   background-image: url("/assets/images/cover1.png");
   background-opacity: 5%;
