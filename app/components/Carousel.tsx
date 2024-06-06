@@ -8,6 +8,9 @@ const moments = [
   { id: 3, image: "/assets/images/moments/moment3.jpg" },
   { id: 4, image: "/assets/images/moments/moment4.jpg" },
   { id: 5, image: "/assets/images/moments/moment5.jpg" },
+  { id: 6, image: "/assets/images/moments/moment6.jpg" },
+  { id: 7, image: "/assets/images/moments/moment7.jpg" },
+  { id: 8, image: "/assets/images/moments/moment8.jpg" },
 ];
 
 const Carousel: React.FC = () => {

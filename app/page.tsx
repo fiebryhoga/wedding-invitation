@@ -8,6 +8,8 @@ import ButtonStart from "./components/ButtonStart";
 import Quote from "./components/Quote";
 import BoxEvent from "./components/BoxEvent";
 import CountingDays from "./components/CountingDays";
+import WeddingGifts from "./components/WeddingGifts";
+import Location from "./components/Location";
 
 export default function Home() {
   const [isOverlayVisible, setOverlayVisible] = useState(true);
@@ -27,7 +29,7 @@ export default function Home() {
   };
 
   return (
-    <main className="py-4 flex flex-col">
+    <main className="py-4 pb-12 flex flex-col">
       {isOverlayVisible && (
         <div
           className="fixed h-screen inset-0 z-50 flex items-center justify-center bg-white"
@@ -39,14 +41,27 @@ export default function Home() {
       <div className="px-4">
         <Hero />
       </div>
-      <Quote/>
-      <div className="px-4 my-8 mb-12">
-        <CountingDays/>
+      <div className="pt-4">
+        <Quote />
       </div>
-      <BoxEvent/>
-      
-      
-      <Carousel />
+      <div className="px-4 my-8 mb-12">
+        <CountingDays />
+      </div>
+      <div className="py-4 mb-4">
+        <BoxEvent />
+      </div>
+      <div className="py-4 mb-4">
+        <Location />
+      </div>
+      <div className="py-4">
+        <WeddingGifts />
+      </div>
+      <div className="py-6 flex flex-col gap-4">
+        <h1 className="w-full text-center text-black text-opacity-80 font-semibold">
+          Our Moments
+        </h1>
+        <Carousel />
+      </div>
     </main>
   );
 }
