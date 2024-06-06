@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Hero from "./components/Hero";
 import Carousel from "./components/Carousel";
+import ButtonStart from "./components/ButtonStart";
 
 export default function Home() {
   const [isOverlayVisible, setOverlayVisible] = useState(true);
@@ -28,9 +29,7 @@ export default function Home() {
           className="fixed inset-0 z-50 flex items-center justify-center bg-white"
           onClick={handleOverlayClick}
         >
-          <button className="px-4 py-4 text-xl tracking-wide font-medium bg-slate-100 text-black rounded-lg border border-slate-400 hover:bg-black hover:text-white">
-            Open the invitation
-          </button>
+          <ButtonStart/>
         </div>
       )}
       <div className="px-4 pb-8">
