@@ -18,7 +18,7 @@ const Background = styled.div`
 `;
 const Hero = () => {
   return (
-    <Background className="bg-black h-60 rounded-xl">
+    <Background className="h-60 rounded-xl">
       <div className="bg-black w-full h-full bg-opacity-40 flex flex-col items-center justify-center gap-2">
         {/* <h2 className="text-white text-3xl font-serif">The Wedding</h2> */}
         <img className='w-32' src="/assets/images/namehero.png" alt="" />

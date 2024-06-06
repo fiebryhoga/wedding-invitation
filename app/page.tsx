@@ -26,7 +26,7 @@ export default function Home() {
   };
 
   return (
-    <main className="pt-8 flex flex-col">
+    <main className="pt-4 flex flex-col">
       {isOverlayVisible && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-white"
