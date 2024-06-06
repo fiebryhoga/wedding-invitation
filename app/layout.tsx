@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Wedding Invittation",
-  description: "M. Ihzra Mahendra & Ummi Maulidiyah",
+  description: "Design Dimas",
 };
 
 export default function RootLayout({
