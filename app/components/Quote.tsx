@@ -3,7 +3,7 @@ import React from 'react'
 
 const Quote = () => {
   return (
-    <div className="px-6 py-8 flex flex-col gap-6">
+    <div className="px-6 flex flex-col gap-6">
       <div className="px-16">
         <img className="w-full" src="/assets/images/basmallah.png" alt="" />
       </div>

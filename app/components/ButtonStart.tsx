@@ -5,7 +5,7 @@ const ButtonStart: React.FC = () => {
   return (
     <button className="button">
       Buka Undangan
-      <div className="icon-1">
+      {/* <div className="icon-1">
         <svg
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 50.3 65.33"
@@ -50,7 +50,7 @@ const ButtonStart: React.FC = () => {
             />
           </g>
         </svg>
-      </div>
+      </div> */}
       <div className="icon-2">
         <svg
           xmlnsXlink="http://www.w3.org/1999/xlink"

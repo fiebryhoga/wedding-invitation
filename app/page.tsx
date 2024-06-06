@@ -10,6 +10,18 @@ import BoxEvent from "./components/BoxEvent";
 import CountingDays from "./components/CountingDays";
 import WeddingGifts from "./components/WeddingGifts";
 import Location from "./components/Location";
+import styled from "styled-components";
+const Cover = styled.div`
+  overflow-x: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 0px);
+  background-size: 130%;
+  position: fixed;
+  background-image: url("/assets/images/cover.png");
+  background-opacity: 5%;
+  min-height: 100vw;
+`;
 
 export default function Home() {
   const [isOverlayVisible, setOverlayVisible] = useState(true);
@@ -29,39 +41,42 @@ export default function Home() {
   };
 
   return (
-    <main className="py-4 pb-12 flex flex-col">
+    <>
       {isOverlayVisible && (
-        <div
-          className="fixed h-screen inset-0 z-50 flex items-center justify-center bg-white"
+        <Cover
+          className="fixed h-screen inset-0 z-50 flex items-center justify-center pt-36"
           onClick={handleOverlayClick}
         >
-          <ButtonStart />
-        </div>
+            <ButtonStart />
+        </Cover>
       )}
-      <div className="px-4">
-        <Hero />
-      </div>
-      <div className="pt-4">
-        <Quote />
-      </div>
-      <div className="px-4 my-8 mb-12">
-        <CountingDays />
-      </div>
-      <div className="py-4 mb-4">
-        <BoxEvent />
-      </div>
-      <div className="py-4 mb-4">
-        <Location />
-      </div>
-      <div className="py-4">
-        <WeddingGifts />
-      </div>
-      <div className="py-6 flex flex-col gap-4">
-        <h1 className="w-full text-center text-black text-opacity-80 font-semibold">
-          Our Moments
-        </h1>
-        <Carousel />
-      </div>
-    </main>
+
+      <main className="py-4 pb-12 flex flex-col gap-8">
+        <div className="px-4">
+          <Hero />
+        </div>
+        <div className="">
+          <Quote />
+        </div>
+        <div className="px-4">
+          <CountingDays />
+        </div>
+        <div className="">
+          <BoxEvent />
+        </div>
+        <div className="">
+          <Location />
+        </div>
+        <div className="">
+          <WeddingGifts />
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="w-full text-center text-black text-opacity-80 font-semibold">
+            Our Moments
+          </h1>
+          <Carousel />
+        </div>
+      </main>
+    </>
   );
 }
