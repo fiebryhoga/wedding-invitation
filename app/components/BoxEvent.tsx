@@ -5,7 +5,7 @@ import Link from 'next/link';
 const BoxEvent = () => {
   return (
     <>
-      <div className="px-6 flex flex-row gap-2">
+      <div className="px-4 flex flex-row gap-2">
         <div className="w-[25%] h-40 bg-black rounded-md">
           <img
             className="h-full w-full object-cover rounded-md"
