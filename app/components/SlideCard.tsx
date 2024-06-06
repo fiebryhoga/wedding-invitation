@@ -31,9 +31,9 @@ const SlideCard: React.FC<SlideCardProps> = ({ position, image }) => {
 
   return (
     <div
-      className={`absolute transition-all h-44 w-28 duration-500 ease-in-out bg-black rounded-xl ${transformClasses} ${opacityClasses}`}
+      className={`absolute transition-all h-44 w-28 duration-500 ease-in-out rounded-xl ${transformClasses} ${opacityClasses}`}
     >
-      <img className="object-cover opacity-80 w-full h-full rounded-xl" src={image} alt="" />
+      <img className="object-cover w-full h-full rounded-xl" src={image} alt="" />
     </div>
   );
 };

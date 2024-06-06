@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 import SlideCard from "./SlideCard";
 
 const moments = [
-  { id: 1, image: "/assets/images/moment1.jpg" },
-  { id: 2, image: "/assets/images/moment2.jpg" },
-  { id: 3, image: "/assets/images/moment3.jpg" },
-  { id: 4, image: "/assets/images/moment4.jpg" },
+  { id: 1, image: "/assets/images/moments/moment1.jpg" },
+  { id: 2, image: "/assets/images/moments/moment2.jpg" },
+  { id: 3, image: "/assets/images/moments/moment3.jpg" },
+  { id: 4, image: "/assets/images/moments/moment4.jpg" },
+  { id: 5, image: "/assets/images/moments/moment5.jpg" },
 ];
 
 const Carousel: React.FC = () => {
