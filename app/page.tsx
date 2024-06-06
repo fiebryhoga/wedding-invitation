@@ -1,9 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import Hero from "./components/Hero";
 import Carousel from "./components/Carousel";
 import ButtonStart from "./components/ButtonStart";
+import Quote from "./components/Quote";
+import BoxEvent from "./components/BoxEvent";
 
 export default function Home() {
   const [isOverlayVisible, setOverlayVisible] = useState(true);
@@ -23,19 +26,21 @@ export default function Home() {
   };
 
   return (
-    <main className="pt-12 flex flex-col gap-4">
+    <main className="pt-8 flex flex-col">
       {isOverlayVisible && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-white"
           onClick={handleOverlayClick}
         >
-          <ButtonStart/>
+          <ButtonStart />
         </div>
       )}
-      <div className="px-4 pb-8">
+      <div className="px-4">
         <Hero />
       </div>
-      <h2 className="font-semibold text-black text-2xl text-center">
+      <Quote/>
+      <BoxEvent/>
+      <h2 className="font-semibold text-black mt-8 text-2xl text-center">
         Our Moment
       </h2>
       <Carousel />
