@@ -8,7 +8,8 @@ const Background = styled.div`
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-position: center calc(100% - 0px);
-  background-size: 100%;
+  background-size: 110%;
+  background-height:100%;
   background-image: url("/assets/images/hero2.jpg");
   background-opacity: 20%;
   position: relative;
@@ -19,7 +20,7 @@ const Background = styled.div`
 const Hero = () => {
   return (
     <Background className="h-60 rounded-xl">
-      <div className="bg-black w-full h-full bg-opacity-40 flex flex-col items-center justify-center gap-2">
+      <div className=" bg-black w-full h-full bg-opacity-40 flex flex-col items-center justify-center gap-2">
         {/* <h2 className="text-white text-3xl font-serif">The Wedding</h2> */}
         <img className='w-32' src="/assets/images/namehero.png" alt="" />
         {/* <i className="text-white text-xl font-serif tracking-wide">Daniel & Dewi</i> */}
