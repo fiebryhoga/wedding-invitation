@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
@@ -14,13 +16,21 @@ const Background = styled.div`
   position: relative;
 `;
 
+// Define the type for timeLeft
+type TimeLeft = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
 // Calculate the remaining time until the target date
-const calculateTimeLeft = () => {
+const calculateTimeLeft = (): TimeLeft => {
   const targetDate = new Date("2024-09-23T08:00:00");
   const now = new Date();
   const difference = targetDate.getTime() - now.getTime();
 
-  let timeLeft = {
+  let timeLeft: TimeLeft = {
     days: 0,
     hours: 0,
     minutes: 0,
@@ -41,7 +51,7 @@ const calculateTimeLeft = () => {
 
 // Countdown component
 const CountingDays: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {

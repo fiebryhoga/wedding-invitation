@@ -4,7 +4,7 @@ import "./ButtonStart.css";
 const ButtonStart: React.FC = () => {
   return (
     <button className="button">
-      Open The Invitation
+      Buka Undangan
       <div className="icon-1">
         <svg
           xmlnsXlink="http://www.w3.org/1999/xlink"

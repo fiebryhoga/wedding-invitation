@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import Carousel from "./components/Carousel";
 import ButtonStart from "./components/ButtonStart";
@@ -14,7 +14,7 @@ export default function Home() {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const audioInstance = new Audio("/assets/music/music1.mp3");
+    const audioInstance = new Audio("/assets/music/janjisuci.mp3");
     audioInstance.loop = true;
     setAudio(audioInstance);
   }, []);
@@ -40,10 +40,11 @@ export default function Home() {
         <Hero />
       </div>
       <Quote/>
-      <BoxEvent/>
       <div className="px-4 my-8 mb-12">
         <CountingDays/>
       </div>
+      <BoxEvent/>
+      
       
       <Carousel />
     </main>
