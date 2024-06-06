@@ -12,7 +12,7 @@ const SlideCard: React.FC<SlideCardProps> = ({ position, image }) => {
 
   switch (position) {
     case "center":
-      transformClasses = "transform scale-100";
+      transformClasses = "transform scale-110";
       opacityClasses = "opacity-100";
       break;
     case "left":
@@ -31,9 +31,9 @@ const SlideCard: React.FC<SlideCardProps> = ({ position, image }) => {
 
   return (
     <div
-      className={`absolute transition-all duration-500 ease-in-out ${transformClasses} ${opacityClasses}`}
+      className={`absolute transition-all h-44 w-28 duration-500 ease-in-out bg-black rounded-xl ${transformClasses} ${opacityClasses}`}
     >
-      <img className="object-cover h-48 w-32 rounded-xl" src={image} alt="" />
+      <img className="object-cover opacity-80 w-full h-full rounded-xl" src={image} alt="" />
     </div>
   );
 };
